@@ -1,0 +1,16 @@
+@use './variables' as vars;
+@use './mixins' as mixins;
+
+body {
+  font-family: Mont, sans-serif;
+  color: vars.$c-primary;
+  background-color: vars.$c-white;
+}
+
+.container {
+  @include mixins.container;
+}
+
+.grid {
+  @include mixins.grid;
+}
