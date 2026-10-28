@@ -28,13 +28,13 @@ export const ProductPage = () => {
       setListItem(null);
 
       try {
-        const productsResponse = await fetch('/api/products.json');
+        const productsResponse = await fetch('api/products.json');
         const products: Product[] = await productsResponse.json();
         const found = products.find(item => item.itemId === productId);
 
         if (found) {
           setListItem(found);
-          const detailsResponse = await fetch(`/api/${found.category}.json`);
+          const detailsResponse = await fetch(`api/${found.category}.json`);
           const details: ProductDetails[] = await detailsResponse.json();
 
           setProduct(details.find(item => item.id === productId) || null);

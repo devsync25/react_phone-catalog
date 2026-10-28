@@ -23,7 +23,7 @@ export const ProductCard = ({ product }: Props) => {
       <Link to={productLink} className={styles.imageLink}>
         <img
           className={styles.image}
-          src={`/${product.image}`}
+          src={product.image}
           alt={product.name}
         />
       </Link>
@@ -75,7 +75,7 @@ export const ProductCard = ({ product }: Props) => {
           onClick={() => toggleFavorite(product)}
         >
           <img
-            src={isLiked ? '/img/icons/heart-like.svg' : '/img/icons/heart.svg'}
+            src={isLiked ? 'img/icons/heart-like.svg' : 'img/icons/heart.svg'}
             alt=""
             width="16"
             height="16"

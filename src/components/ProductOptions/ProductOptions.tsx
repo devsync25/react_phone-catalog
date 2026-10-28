@@ -129,7 +129,7 @@ export const ProductOptions = ({ product, listItem }: Props) => {
           onClick={() => toggleFavorite(listItem)}
         >
           <img
-            src={isLiked ? '/img/icons/heart-like.svg' : '/img/icons/heart.svg'}
+            src={isLiked ? 'img/icons/heart-like.svg' : 'img/icons/heart.svg'}
             alt=""
             width="16"
             height="16"

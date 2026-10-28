@@ -5,7 +5,7 @@ export const getSuggestedProducts = async (
   currentItemId: string,
   count = 12,
 ): Promise<Product[]> => {
-  const response = await fetch('/api/products.json');
+  const response = await fetch('api/products.json');
   const products: Product[] = await response.json();
 
   return products

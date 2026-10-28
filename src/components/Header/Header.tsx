@@ -24,7 +24,7 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <img src="/img/icons/logo.svg" alt="Nice Gadgets" height="28" />
+          <img src="img/icons/logo.svg" alt="Nice Gadgets" height="28" />
         </Link>
 
         <nav className={styles.nav}>
@@ -45,7 +45,7 @@ export const Header = () => {
         <div className={styles.actions}>
           <Link to="/favorites" className={styles.action}>
             <img
-              src="/img/icons/heart.svg"
+              src="img/icons/heart.svg"
               alt="Favorites"
               width="16"
               height="16"
@@ -57,7 +57,7 @@ export const Header = () => {
           </Link>
 
           <Link to="/cart" className={styles.action}>
-            <img src="/img/icons/cart.svg" alt="Cart" width="16" height="16" />
+            <img src="img/icons/cart.svg" alt="Cart" width="16" height="16" />
 
             {totalCount > 0 && (
               <span className={styles.badge}>{totalCount}</span>
@@ -80,7 +80,7 @@ export const Header = () => {
         <div className={styles.menu}>
           <div className={styles.menuTop}>
             <Link to="/" className={styles.logo} onClick={closeMenu}>
-              <img src="/img/icons/logo.svg" alt="Nice Gadgets" height="28" />
+              <img src="img/icons/logo.svg" alt="Nice Gadgets" height="28" />
             </Link>
 
             <button
@@ -128,7 +128,7 @@ export const Header = () => {
               onClick={closeMenu}
             >
               <span className={styles.menuIcon}>
-                <img src="/img/icons/heart.svg" alt="" width="16" height="16" />
+                <img src="img/icons/heart.svg" alt="" width="16" height="16" />
 
                 {favorites.length > 0 && (
                   <span className={styles.badge}>{favorites.length}</span>
@@ -143,7 +143,7 @@ export const Header = () => {
               onClick={closeMenu}
             >
               <span className={styles.menuIcon}>
-                <img src="/img/icons/cart.svg" alt="" width="16" height="16" />
+                <img src="img/icons/cart.svg" alt="" width="16" height="16" />
 
                 {totalCount > 0 && (
                   <span className={styles.badge}>{totalCount}</span>

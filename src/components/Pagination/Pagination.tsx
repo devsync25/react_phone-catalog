@@ -38,7 +38,7 @@ export const Pagination = ({
         disabled={currentPage === 1}
         aria-label="Previous page"
       >
-        <img src="/img/icons/arrow-left.svg" alt="" width="16" height="16" />
+        <img src="img/icons/arrow-left.svg" alt="" width="16" height="16" />
       </button>
 
       {pages.map(page => (
@@ -60,7 +60,7 @@ export const Pagination = ({
         disabled={currentPage === pagesCount}
         aria-label="Next page"
       >
-        <img src="/img/icons/arrow-right.svg" alt="" width="16" height="16" />
+        <img src="img/icons/arrow-right.svg" alt="" width="16" height="16" />
       </button>
     </nav>
   );

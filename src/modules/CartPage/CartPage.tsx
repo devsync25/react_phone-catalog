@@ -28,7 +28,7 @@ export const CartPage = () => {
 
           <img
             className={styles.emptyImage}
-            src="/img/cart-is-empty.png"
+            src="img/cart-is-empty.png"
             alt=""
           />
         </div>

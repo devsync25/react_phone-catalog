@@ -14,7 +14,7 @@ export const ProductGallery = ({ images, alt }: Props) => {
       <div className={styles.main}>
         <img
           className={styles.mainImage}
-          src={`/${images[selectedIndex]}`}
+          src={images[selectedIndex]}
           alt={alt}
         />
       </div>
@@ -29,7 +29,7 @@ export const ProductGallery = ({ images, alt }: Props) => {
             aria-label={`Photo ${index + 1}`}
             onClick={() => setSelectedIndex(index)}
           >
-            <img className={styles.thumbImage} src={`/${image}`} alt="" />
+            <img className={styles.thumbImage} src={image} alt="" />
           </button>
         ))}
       </div>

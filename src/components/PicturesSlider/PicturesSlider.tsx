@@ -4,14 +4,14 @@ import styles from './PicturesSlider.module.scss';
 
 const SLIDES = [
   {
-    image: '/img/banner-phones-desktop.png',
-    mobileImage: '/img/banner-phones-mobile.png',
+    image: 'img/banner-phones-desktop.png',
+    mobileImage: 'img/banner-phones-mobile.png',
     to: '/phones',
     alt: 'Now available in our store! iPhone 14 Pro. Be the first!',
   },
-  { image: '/img/banner-tablets.png', to: '/tablets', alt: 'Tablets' },
+  { image: 'img/banner-tablets.png', to: '/tablets', alt: 'Tablets' },
   {
-    image: '/img/banner-accessories.png',
+    image: 'img/banner-accessories.png',
     to: '/accessories',
     alt: 'Accessories',
   },
@@ -60,7 +60,7 @@ export const PicturesSlider = () => {
           aria-label="Previous picture"
           onClick={() => goTo((index - 1 + SLIDES.length) % SLIDES.length)}
         >
-          <img src="/img/icons/arrow-left.svg" alt="" width="16" height="16" />
+          <img src="img/icons/arrow-left.svg" alt="" width="16" height="16" />
         </button>
 
         <div className={styles.track} ref={trackRef} onScroll={handleScroll}>
@@ -87,7 +87,7 @@ export const PicturesSlider = () => {
           aria-label="Next picture"
           onClick={() => goTo((index + 1) % SLIDES.length)}
         >
-          <img src="/img/icons/arrow-right.svg" alt="" width="16" height="16" />
+          <img src="img/icons/arrow-right.svg" alt="" width="16" height="16" />
         </button>
       </div>
 

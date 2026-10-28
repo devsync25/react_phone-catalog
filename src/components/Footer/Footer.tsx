@@ -13,7 +13,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <img src="/img/icons/logo.svg" alt="Nice Gadgets" height="28" />
+          <img src="img/icons/logo.svg" alt="Nice Gadgets" height="28" />
         </Link>
 
         <nav className={styles.nav}>
@@ -51,7 +51,7 @@ export const Footer = () => {
           Back to top
           <span className={styles.arrow}>
             <img
-              src="/img/icons/arrow-right.svg"
+              src="img/icons/arrow-right.svg"
               alt=""
               width="16"
               height="16"

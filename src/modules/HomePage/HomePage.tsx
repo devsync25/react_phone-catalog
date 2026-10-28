@@ -12,7 +12,7 @@ export const HomePage = () => {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    fetch('/api/products.json')
+    fetch('api/products.json')
       .then(response => response.json())
       .then((data: Product[]) => setProducts(data))
       .catch(() => setHasError(true))

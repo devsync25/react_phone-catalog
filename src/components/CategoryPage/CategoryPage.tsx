@@ -36,7 +36,7 @@ export const CategoryPage = ({ category, title, crumb }: Props) => {
   const isReady = !isLoading && !hasError && products.length > 0;
 
   useEffect(() => {
-    fetch('/api/products.json')
+    fetch('api/products.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to load products');
@@ -130,7 +130,7 @@ export const CategoryPage = ({ category, title, crumb }: Props) => {
 
                 <img
                   className={styles.selectArrow}
-                  src="/img/icons/arrow-right.svg"
+                  src="img/icons/arrow-right.svg"
                   alt=""
                   width="16"
                   height="16"
@@ -158,7 +158,7 @@ export const CategoryPage = ({ category, title, crumb }: Props) => {
 
                 <img
                   className={styles.selectArrow}
-                  src="/img/icons/arrow-right.svg"
+                  src="img/icons/arrow-right.svg"
                   alt=""
                   width="16"
                   height="16"

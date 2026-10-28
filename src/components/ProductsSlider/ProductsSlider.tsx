@@ -69,7 +69,7 @@ export const ProductsSlider = ({ title, products }: Props) => {
             onClick={() => scrollByCard(-1)}
           >
             <img
-              src="/img/icons/arrow-left.svg"
+              src="img/icons/arrow-left.svg"
               alt=""
               width="16"
               height="16"
@@ -84,7 +84,7 @@ export const ProductsSlider = ({ title, products }: Props) => {
             onClick={() => scrollByCard(1)}
           >
             <img
-              src="/img/icons/arrow-right.svg"
+              src="img/icons/arrow-right.svg"
               alt=""
               width="16"
               height="16"

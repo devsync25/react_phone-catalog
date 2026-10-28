@@ -10,7 +10,7 @@ export const BackButton = () => {
       className={styles.button}
       onClick={() => navigate(-1)}
     >
-      <img src="/img/icons/arrow-left.svg" alt="" width="16" height="16" />
+      <img src="img/icons/arrow-left.svg" alt="" width="16" height="16" />
       Back
     </button>
   );
