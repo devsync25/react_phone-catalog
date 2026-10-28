@@ -7,19 +7,19 @@ const CATEGORIES = [
     title: 'Mobile phones',
     category: 'phones',
     to: '/phones',
-    image: '/img/category-phones.webp',
+    image: '/img/phones-category.png',
   },
   {
     title: 'Tablets',
     category: 'tablets',
     to: '/tablets',
-    image: '/img/category-tablets.webp',
+    image: '/img/tablets-category.png',
   },
   {
     title: 'Accessories',
     category: 'accessories',
     to: '/accessories',
-    image: '/img/category-accessories.webp',
+    image: '/img/accessories-category.png',
   },
 ];
 
