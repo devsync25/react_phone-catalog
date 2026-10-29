@@ -7,7 +7,7 @@ body {
   background-color: vars.$c-white;
 }
 
-:root {
+.app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;

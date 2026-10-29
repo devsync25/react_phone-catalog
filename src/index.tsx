@@ -8,10 +8,12 @@ import './styles/index.scss';
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <HashRouter>
-    <FavoritesProvider>
-      <CartProvider>
-        <App />
-      </CartProvider>
-    </FavoritesProvider>
+    <div className="app">
+      <FavoritesProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </FavoritesProvider>
+    </div>
   </HashRouter>,
 );
