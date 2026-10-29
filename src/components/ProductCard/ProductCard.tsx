@@ -7,9 +7,10 @@ import styles from './ProductCard.module.scss';
 
 interface Props {
   product: Product;
+  showDiscount?: boolean;
 }
 
-export const ProductCard = ({ product }: Props) => {
+export const ProductCard = ({ product, showDiscount = false }: Props) => {
   const { toggleFavorite, isFavorite } = useFavorites();
   const isLiked = isFavorite(product.itemId);
 
@@ -21,11 +22,7 @@ export const ProductCard = ({ product }: Props) => {
   return (
     <article className={styles.card}>
       <Link to={productLink} className={styles.imageLink}>
-        <img
-          className={styles.image}
-          src={product.image}
-          alt={product.name}
-        />
+        <img className={styles.image} src={product.image} alt={product.name} />
       </Link>
 
       <h3 className={styles.title}>
@@ -36,7 +33,9 @@ export const ProductCard = ({ product }: Props) => {
 
       <p className={styles.prices}>
         <span className={styles.price}>${product.price}</span>
-        <span className={styles.fullPrice}>${product.fullPrice}</span>
+        {showDiscount && (
+          <span className={styles.fullPrice}>${product.fullPrice}</span>
+        )}
       </p>
 
       <div className={styles.specs}>

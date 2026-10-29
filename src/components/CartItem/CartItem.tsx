@@ -27,11 +27,7 @@ export const CartItem = ({ item }: Props) => {
       </button>
 
       <Link to={productLink} className={styles.imageLink}>
-        <img
-          className={styles.image}
-          src={product.image}
-          alt={product.name}
-        />
+        <img className={styles.image} src={product.image} alt={product.name} />
       </Link>
 
       <Link to={productLink} className={styles.name}>

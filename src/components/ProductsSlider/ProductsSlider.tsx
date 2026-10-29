@@ -6,9 +6,14 @@ import styles from './ProductsSlider.module.scss';
 interface Props {
   title: string;
   products: Product[];
+  showDiscount?: boolean;
 }
 
-export const ProductsSlider = ({ title, products }: Props) => {
+export const ProductsSlider = ({
+  title,
+  products,
+  showDiscount = true,
+}: Props) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [arrows, setArrows] = useState({ prev: false, next: true });
 
@@ -68,12 +73,7 @@ export const ProductsSlider = ({ title, products }: Props) => {
             disabled={!arrows.prev}
             onClick={() => scrollByCard(-1)}
           >
-            <img
-              src="img/icons/arrow-left.svg"
-              alt=""
-              width="16"
-              height="16"
-            />
+            <img src="img/icons/arrow-left.svg" alt="" width="16" height="16" />
           </button>
 
           <button
@@ -95,7 +95,11 @@ export const ProductsSlider = ({ title, products }: Props) => {
 
       <div className={styles.track} ref={trackRef}>
         {products.map(product => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard
+            key={product.id}
+            product={product}
+            showDiscount={showDiscount}
+          />
         ))}
       </div>
     </section>
